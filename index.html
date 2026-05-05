@@ -1,91 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>DAbali</title>
-</head><!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <style>
-            .scrolling-text {
-                width: 100%;
-                overflow: hidden;
-                white-space: nowrap;
-                box-sizing: border-box;
-            }
-            .scrolling-text span {
-                display: inline-block;
-                padding-left: 100%;
-                animation: scrolling 20s linear infinite;
-            }
-            @keyframes scrolling {
-                0%{
-                    transform: translateX(100);
-                }
-                100%{
-                    transform: translateX(-100%);
-                }
-             }
-        </style>
-        <title>Bien Etre Bio</title>
-    </head>
-    <body>
-        <img src="https://github.com/Freddybusness/Dabali/blob/main/Image/OIP%20(8).png" alt="image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAbali - Restaurant</title>
 
-        <img id="image" src="Image/g6thnfma.png" alt="image">
-        <div class="scrolling-text">
-            <span><h1> Bienvenue au marché de gastronomie de  l'INFAS en ligne appelez nous au numéro suivant +225 0102165641 ou écrivez nous sur whatsapp ci dessous </h1>
-            </span>
-        </div>
-          <a href="https://wa.me/2250102165641">whatsapp</a>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        header {
+            background: green;
+            color: white;
+            padding: 15px;
+        }
+
+        .scrolling-text {
+            background: black;
+            color: white;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .scrolling-text span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .plat {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+
+        .plat img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .prix {
+            color: green;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: green;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: darkgreen;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-            </ul>
-        </nav>
-    </header>
-    <h1>Nos dabalis</h1>
-    <h3>MENUS DISPONIBLE TOUS LES JOURS</h3>
 
-    <ol>
-        <li><ul>Tchep au poulet 1000f</ul></li>
-        <img src="https://github.com/Freddybusness/Dabali/blob/main/Image/OIP%20(8).png" alt="image">
+<header>
+    <h1>🍽️ DAbali - Restaurant</h1>
+</header>
 
-            <li><ul>chep au poisson 1000f</ul></li>
-            <li><ul>Attiéké avec poulet braisé 1200f ou plus</ul></li>
-                        <li><ul>poisson braisé 1200f ou plus</ul></li>
-                                <li><ul>Alloco au poisson 1000f</ul></li>
-                        <li><ul>frite au poulet 1000f</ul></li>
-                        <li><ul>Alloco au poulet</ul></li>
-                                <li><ul>RIZ AVEC SAUCE GRAINE</ul></li>
-                                <li><ul>RIZ AVEC SAUCE ARACHIDE</ul></li>
-                                <li><ul>BAWIN</ul></li>
-                                        <li><ul>RIZ AVEC SAUCE FEUILLE</ul></li>
+<div class="scrolling-text">
+    <span>Bienvenue au marché de gastronomie INFAS 📞 +225 0102165641 | Commande WhatsApp disponible</span>
+</div>
 
-    <h3>UNIQUEMENT MARDI</h3>
-                                <li><ul>KABATO AVEC SAUCE DJOUMBLE</ul></li>
+<h2>Nos plats disponibles</h2>
 
-                        <li><ul>...</ul></li>
+<div class="menu">
 
-        </ol>
-    <h3>RESTAURANT LES FINANCES SITUE AU PLATEAU</h3>
- <li>  Savon </li>
-        <img id="image" src="Image/OIP%20(8).png alt="image">
-        <img src="https://github.com/Freddybusness/Dabali/blob/main/Image/OIP%20(8).png" alt="image">
-        <img src="Image/OIP%20(8).png" alt="">
-        <img src="https://github.com/Freddybusness/Dabali/blob/main/Image/OIP%20(8).png" alt="image">
-        <img src="" alt="">
-        <img src="" alt="">
-   
-</body>        
+    <div class="plat">
+        <img src="https://i.pinimg.com/originals/45/a0/49/45a04963101c9edd878acc56a832b000.png">
+        <h3>Attiéké + Poisson braisé</h3>
+        <p class="prix">1000 FCFA</p>
+        <a class="btn" href="https://wa.me/2250102165641?text=Je veux commander Attiéké poisson">Commander</a>
+    </div>
 
-</html>
-<body>
-    <h1></h1>
+    <div class="plat">
+        <img src="https://i.pinimg.com/originals/5f/62/30/5f62300e31c34b40239fd7ade934ea15.jpg">
+        <h3>Attiéké + Poulet braisé</h3>
+        <p class="prix">1200 FCFA</p>
+        <a class="btn" href="https://wa.me/2250102165641?text=Je veux commander Attiéké poulet">Commander</a>
+    </div>
+
+    <div class="plat">
+        <img src="https://i.pinimg.com/originals/7b/54/43/7b54433676cbdc82b4df9b7632bc7498.jpg">
+        <h3>Alloco + Poulet</h3>
+        <p class="prix">1000 FCFA</p>
+        <a class="btn" href="https://wa.me/2250102165641?text=Je veux commander Alloco poulet">Commander</a>
+    </div>
+
+    <div class="plat">
+        <img src="https://i.pinimg.com/originals/5f/62/30/5f62300e31c34b40239fd7ade934ea15.jpg">
+        <h3>Frite + Poulet</h3>
+        <p class="prix">1000 FCFA</p>
+        <a class="btn" href="https://wa.me/2250102165641?text=Je veux commander Frite poulet">Commander</a>
+    </div>
+
+</div>
+
+<h3>📍 Localisation : Plateau - Restaurant Les Finances</h3>
+
 </body>
 </html>
